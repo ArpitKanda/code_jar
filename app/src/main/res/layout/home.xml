@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arpitkanda.trainproject.Main2Activity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_layout_id">
+
+      <RelativeLayout
+            android:id="@+id/gallary_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Gallery
+                android:id="@+id/galary"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+            </Gallery>
+            <LinearLayout
+                android:id="@+id/image_count"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/galary"
+                android:background="#00000000"
+                android:gravity="center"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </RelativeLayout>
+        <ScrollView
+            android:id="@+id/grid_scroll_id"
+            android:layout_width="match_parent"
+            android:layout_below="@id/gallary_layout_id"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/grid_parent_id"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/grid_heading_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="Shop By Category"/>
+
+                <GridLayout
+                    android:id="@+id/grid_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:rowCount="4"
+                    android:gravity="center"
+                    android:layout_below="@id/grid_heading_id"
+                    android:layout_gravity="center"
+                    android:columnCount="2">
+
+                    <RelativeLayout
+                        android:layout_height="180dp"
+                        android:background="@color/grid_color"
+                        android:gravity="center"
+                        android:layout_width="180dp">
+
+                    <ImageView
+                        android:id="@+id/grid_image_1"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:gravity="center"
+                        android:src="@drawable/fruit"/>
+
+                        <TextView
+                            android:id="@+id/grid_text_id1"
+                            android:layout_width="150dp"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:layout_below="@id/grid_image_1"
+                            android:text="Fruits and Vegitable"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        android:gravity="center"
+                        android:background="@color/grid_color">
+                    <ImageView
+                        android:id="@+id/grid_image_2"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:gravity="center"
+                        android:src="@drawable/fruit" />
+
+                        <TextView
+                            android:id="@+id/grid_text_id2"
+                            android:layout_width="160dp"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:layout_below="@id/grid_image_2"
+                            android:text="Grocery"/>
+                    </RelativeLayout>
+
+                 <RelativeLayout
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        android:gravity="center"
+                        android:background="@color/grid_color">
+                    <ImageView
+                        android:id="@+id/grid_image_3"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:gravity="center"
+                        android:src="@drawable/fruit"/>
+
+                     <TextView
+                         android:id="@+id/grid_text_id4"
+                         android:layout_width="160dp"
+                         android:layout_height="20dp"
+                         android:gravity="center"
+                         android:layout_below="@id/grid_image_3"
+                         android:text="Milk and Dairy"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_height="180dp"
+                        android:layout_width="180dp"
+                        android:gravity="center"
+                        android:background="@color/grid_color">
+                    <ImageView
+                        android:id="@+id/grid_image_4"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:gravity="center"
+                        android:src="@drawable/fruit" />
+
+                        <TextView
+                            android:id="@+id/grid_text_id3"
+                            android:layout_width="160dp"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:layout_below="@id/grid_image_4"
+                            android:text="Egg and Meat"/>
+                    </RelativeLayout>
+                </GridLayout>
+            </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>
+    </ScrollView>
