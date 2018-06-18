@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5f7"
+    android:id="@+id/nested_scroll">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/gallary_layout_id"
+            android:layout_width="match_parent"
+            android:background="@color/light_green_color"
+            android:layout_height="wrap_content">
+            <Gallery
+                android:id="@+id/galary"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+            </Gallery>
+            <LinearLayout
+                android:id="@+id/image_count"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/galary"
+                android:background="#00000000"
+                android:gravity="center"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="10dp"
+            android:text="Shop By Category"
+            android:gravity="center"
+            android:textColor="#111"
+            android:textSize="16dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

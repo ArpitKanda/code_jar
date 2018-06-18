@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "181157782544",
+    "firebase_url": "https://fresh-organic-kart-902d7.firebaseio.com",
+    "project_id": "city-cab-902d7",
+    "storage_bucket": "fresh-organic-kart-902d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181157782544:android:631cfb091f22bee5",
+        "android_client_info": {
+          "package_name": "com.example.arpitkanda.orgnickart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181157782544-0bumim2verlgrgrg61gatvj4eruq14rl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ3RtCjb_1zbCKEaNXmzsARkPXgcFzUlE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

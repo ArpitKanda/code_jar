@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Vendor: N/A
+Implementation-Title: Java Runtime Environment
+Implementation-Version: 1.8.0_152
+Implementation-Vendor-Id: com.sun
+Specification-Vendor: Oracle Corporation
+Created-By: 1.7.0_79 (Oracle Corporation)
+Specification-Title: Java Platform API Specification
+Specification-Version: 1.8
+Extension-Name: javax.crypto
+

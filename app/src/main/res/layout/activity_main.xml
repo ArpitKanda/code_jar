@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="131dp"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo_app" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -31,15 +31,6 @@
         android:layout_below="@+id/progressBar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp"
-        android:text="Please Wait" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button"
-        android:layout_marginBottom="12dp"
-        android:layout_toStartOf="@+id/progressBar"
-        android:text="TextView" />
+        android:text="Welcome To Fresh Orgenic Cart" />
 
 </RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/signup_image_id"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/signup_facebook_id"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/facebook"/>
+
+        <ImageView
+            android:id="@+id/signup_gmail_id"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@+id/signup_facebook_id"
+            android:src="@drawable/gmail"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/signup_vertical_line_id"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/signup_image_id"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/signup_vertical_line_1_id"
+            android:layout_width="120dp"
+            android:background="@android:color/background_dark"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp">
+        </View>
+
+        <TextView
+            android:id="@+id/signup_txt_or_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/signup_vertical_line_1_id"
+            android:textSize="15sp"
+            android:text="Or"
+            android:layout_marginLeft="25dp"
+            android:gravity="center" />
+        <View
+            android:id="@+id/signup_vertical_line_2_id"
+            android:layout_width="120dp"
+            android:layout_toRightOf="@+id/signup_txt_or_id"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_dark"
+            android:layout_height="1dp">
+        </View>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/signup_vertical_line_id"
+        android:id="@+id/signup_text_container"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/signup_txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/add_user"
+            android:hint="Name"/>
+
+        <EditText
+            android:id="@+id/signup_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_txt_name"
+            android:drawableLeft="@drawable/mail"
+            android:hint="Email"
+            android:drawablePadding="10dp"
+            android:textColorHighlight="@android:color/holo_red_light"/>
+
+        <EditText
+            android:id="@+id/signup_txt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/lock_pass"
+            android:layout_below="@+id/signup_txt_email"
+            android:hint="Password"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_txt_pass"
+            android:text="Sign Up"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/otp_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_below="@+id/signup_text_container">
+        <EditText
+            android:id="@+id/txt_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="5-Digit OTP" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:layout_below="@+id/txt_otp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

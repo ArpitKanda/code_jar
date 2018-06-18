@@ -2,15 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/search_id"
+        android:id="@+id/login_bar"
         android:orderInCategory="100"
-        android:icon="@drawable/ic_action_action_search"
-        android:title="@string/abc_search_hint"
-        app:showAsAction="always"
-        />
-    <!--<item-->
-        <!--android:id="@+id/action_settings"-->
-        <!--android:orderInCategory="100"-->
-        <!--android:title="@string/action_settings"-->
-        <!--app:showAsAction="never" />-->
+        android:title="Login"
+        app:showAsAction="never" />
 </menu>
